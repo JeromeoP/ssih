@@ -1,5 +1,14 @@
 import React from "react";
-import { Box, Container, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  Link,
+} from "@chakra-ui/react";
+import { Link as ReachLink } from "@reach/router";
 
 function HomePage() {
   return (
@@ -40,16 +49,18 @@ function HomePage() {
           mb={{ base: 8, md: 0 }}
         >
           <Heading as="h2" size="xl" mb={4}>
-            Our Services
+            <Link as={ReachLink} to="/previous-winner">
+              Tidigare vinnare
+            </Link>
           </Heading>
           <Text fontSize="lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante
-            augue. Nunc mattis magna sed purus bibendum, a commodo elit maximus.
+            Återupplev de gamla ärofyllda vinnarnas bidrag med Sahlins "Ey,
+            leker ni arga leken?" i spetsen.
           </Text>
         </Box>
         <Box flex="1">
           <Image
-            src="https://via.placeholder.com/400x400"
+            src="/img/winner2020.png"
             alt="Placeholder Image"
             borderRadius="md"
           />

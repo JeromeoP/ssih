@@ -15,7 +15,7 @@ function StickyHeader() {
       top={0}
       zIndex={10}
     >
-      <Heading size="md">My Sticky Header</Heading>
+      <Heading size="md">Saker som inte hänt 2023</Heading>
     </Flex>
   );
 }

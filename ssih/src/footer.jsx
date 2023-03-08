@@ -1,5 +1,6 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import React from "react";
+import { Link as ReachLink } from "@reach/router";
 
 function Footer() {
   return (
@@ -15,7 +16,7 @@ function Footer() {
           <Text fontSize="lg">&copy; Saker som inte hänt 2023</Text>
         </Box>
         <Box mt={{ base: 8, md: 0 }}>
-          <Link mr={4} fontSize="lg" href="#">
+          <Link as={ReachLink} to="/" mr={4} fontSize="lg">
             Home
           </Link>
           <Link mr={4} fontSize="lg" href="#">
