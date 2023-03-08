@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import { Router, Link } from "@reach/router";
 
-import HomePage from "./homePage";
-import StickyHeader from "./stickyHeader";
-import Footer from "./footer";
-import PreviousWinner from "./previousWinners";
+import HomePage from "./Components/homePage";
+import StickyHeader from "./Components/stickyHeader";
+import Footer from "./Components/footer";
+import PreviousWinner from "./Components/previousWinners";
 class App extends Component {
   render() {
     return (
